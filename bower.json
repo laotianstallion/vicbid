@@ -1,0 +1,16 @@
+{
+  "name": "vicbid",
+  "version": "0.0.0",
+  "homepage": "https://github.com/laotianstallion/vicbid",
+  "authors": [
+    "laotianstallion <rudy@zipnosis.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
