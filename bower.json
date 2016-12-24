@@ -1,11 +1,12 @@
 {
   "name": "vicbid",
-  "version": "0.0.0",
-  "homepage": "https://github.com/laotianstallion/vicbid",
+  "description": "",
+  "main": "web.js",
   "authors": [
     "laotianstallion <rudy@zipnosis.com>"
   ],
-  "license": "MIT",
+  "license": "ISC",
+  "homepage": "https://github.com/laotianstallion/vicbid",
   "ignore": [
     "**/.*",
     "node_modules",

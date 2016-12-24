@@ -1,4 +1,4 @@
-angular.module('vicapp.config', ['ui.router'])
+angular.module('app.config', ['ui.router'])
   .config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
     function($stateProvider, $locationProvider, $urlRouterProvider) {
       $locationProvider.html5Mode({enabled: true, requireBase: false});
@@ -6,7 +6,7 @@ angular.module('vicapp.config', ['ui.router'])
       var home = {
         name: 'home',
         url: '/',
-        templateUrl: 'app/components/home/index.html'
+        templateUrl: 'components/home/index.html'
       };
       $stateProvider.state(home);
 
@@ -16,7 +16,7 @@ angular.module('vicapp.config', ['ui.router'])
       addState = function (name, url, options) {
         $stateProvider.state(name, angular.extend({
           url: url,
-          templateUrl: 'app/components/' + name + '/index.html',
+          templateUrl: 'components/' + name + '/index.html',
           controller: options.controller
         }));
       };

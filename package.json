@@ -2,7 +2,12 @@
   "name": "vicbid",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "web.js",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/laotianstallion/vicbid/issues"
   },
-  "homepage": "https://github.com/laotianstallion/vicbid",
-  "dependencies": {
-    "angular-ui-router": "^0.3.1"
-  }
+  "homepage": "https://github.com/laotianstallion/vicbid"
 }
