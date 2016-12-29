@@ -10,15 +10,23 @@ angular.module('app.config', ['ui.router'])
       };
       $stateProvider.state(home);
 
+      var login = {
+        name: 'login',
+        url: '/',
+        templateUrl: 'components/login/index.html'
+      };
+      $stateProvider.state(login);
+
       $urlRouterProvider.when('', '/');
       $urlRouterProvider.otherwise('/404');
 
       addState = function (name, url, options) {
-        $stateProvider.state(name, angular.extend({
+        $stateProvider.state(angular.extend({
           url: url,
-          templateUrl: 'components/' + name + '/index.html',
-          controller: options.controller
+          templateUrl: 'components/' + name + '/index.html'
         }));
       };
+
+      // addState(   'login',      '/login');
     }
   ]);

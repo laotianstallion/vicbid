@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-6">
+      <a class="pull-right" ui-sref='login'>Login</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 text-center">
+    <h3>What service do you need help with?</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="list-group service-container">
+      <div ng-repeat="service in $ctrl.services">
+        <button type="button" class="list-group-item">{{ service }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row form-nav">
+  <div class="col-xs-12">
+    <div class="pull-left">
+      <a ui-sref="preview"><div class="glyphicon glyphicon-arrow-left"></div></a>
+    </div>
+    <div class="pull-right">
+      <a ui-sref="next"><div class="glyphicon glyphicon-arrow-right"></div></a>
+    </div>
+  </div>
+</div>
